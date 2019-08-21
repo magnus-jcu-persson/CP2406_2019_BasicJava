@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Game game = new Game();
+        Game game = new Game(1, 10);
 
         while (game.wins < 1) {
             Scanner userInput = new Scanner(System.in);
