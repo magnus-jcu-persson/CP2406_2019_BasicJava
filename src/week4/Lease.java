@@ -19,7 +19,6 @@ public class Lease {
 
     public void addPetFee() {
         setMonthlyRentAmount(monthly_rent_amount + 10);
-
     }
 
     private static void explainPetPolicy() {

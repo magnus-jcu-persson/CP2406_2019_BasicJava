@@ -4,6 +4,7 @@ public class Student {
     private Integer student_id;
     private Integer earned_credit_hours;
     private Integer earned_points;
+
     public Student() {
         setStudentId(9999);
         setEarnedCreditHours(3);
