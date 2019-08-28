@@ -16,7 +16,13 @@ public class AscendingAndDescending {
         }
         Collections.sort(numberList);
 
-        for ( int number : numberList ) {
+        for (int number : numberList) {
+            System.out.println(number);
+        }
+
+        Collections.sort(numberList, Collections.reverseOrder());
+
+        for (int number : numberList) {
             System.out.println(number);
         }
     }
