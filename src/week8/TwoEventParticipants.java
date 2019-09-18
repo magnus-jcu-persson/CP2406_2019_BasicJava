@@ -7,20 +7,18 @@ public class TwoEventParticipants {
         Participant[] miniMarathonParticipants = new Participant[8];
         Participant[] divingParticipants = new Participant[8];
 
-        Scanner in = new Scanner(System.in);
-
         System.out.println("Mini Marathon Participants");
-        for(var i = 0; i < miniMarathonParticipants.length; i++) {
-            miniMarathonParticipants[i] = getParticipant(in);
+        for (var i = 0; i < miniMarathonParticipants.length; i++) {
+            miniMarathonParticipants[i] = getParticipant();
         }
 
         System.out.println("Diving Competition Participants");
-        for(var i = 0; i < miniMarathonParticipants.length; i++) {
-            divingParticipants[i] = getParticipant(in);
+        for (var i = 0; i < miniMarathonParticipants.length; i++) {
+            divingParticipants[i] = getParticipant();
         }
 
-        for (Participant marathonParticipant: miniMarathonParticipants) {
-            for (Participant divingParticipant: divingParticipants) {
+        for (Participant marathonParticipant : miniMarathonParticipants) {
+            for (Participant divingParticipant : divingParticipants) {
                 if (marathonParticipant.equals(divingParticipant)) {
                     System.out.println("TwoEventParticipant Found");
                     System.out.println(marathonParticipant.toString());
@@ -29,7 +27,10 @@ public class TwoEventParticipants {
         }
     }
 
-    private static Participant getParticipant(Scanner in) {
+    private static Participant getParticipant() {
+
+        Scanner in = new Scanner(System.in);
+
         System.out.print("Enter name >> ");
         String name = in.nextLine();
 
