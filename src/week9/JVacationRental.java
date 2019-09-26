@@ -21,7 +21,7 @@ public class JVacationRental extends JFrame implements ActionListener {
 
     private JVacationRental() {
 
-        super("JHistoricalFacts");
+        super("JVacationRental");
         setSize(500, 500);
         setLayout(new GridBagLayout());
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
